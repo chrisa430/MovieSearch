@@ -1,1 +1,1 @@
-# moviesearch
+Basic react app that allows you to search for any movie that you want!
