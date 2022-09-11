@@ -1,8 +1,17 @@
 import {useEffect} from "react";
 import './App.css';
 import SearchIcon from './search.svg';
+import MovieCard from "./MovieCard";
 
 const API_URL = 'http://www.omdbapi.com?apikey=a0a7e3c9';
+
+const movie1 = {
+    "Title": "Amazing Spiderman Syndrome",
+    "Year": "2012",
+    "imdbID": "tt2586634",
+    "Type": "movie",
+    "Poster": "N/A"
+}
 
 const App = () =>{
 
@@ -34,7 +43,7 @@ const App = () =>{
        />
        </div>
        <div className="container">
-       
+           <MovieCard movie1={movie1}/>
        </div>
        </div>
     );
